@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 300" font-family="IBM Plex Sans, system-ui, sans-serif">
+  <defs>
+    <marker id="cf-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0L10 5L0 10z" fill="var(--muted, #8a919c)"/>
+    </marker>
+  </defs>
+  <g fill="none" stroke="var(--muted, #8a919c)" stroke-width="1.5" marker-end="url(#cf-arrow)">
+    <path d="M170 58 H322"/>
+    <path d="M330 88 H178"/>
+    <path d="M170 230 H322"/>
+    <path d="M415 190 V118"/>
+  </g>
+  <rect x="20" y="30" width="150" height="240" rx="10" fill="var(--surface, #ffffff)" stroke="var(--hair, #e3e6eb)"/>
+  <text x="95" y="146" text-anchor="middle" font-size="15" font-weight="600" fill="var(--ink, #0e1420)">Your build</text>
+  <text x="95" y="167" text-anchor="middle" font-size="12" fill="var(--ink-2, #4b5563)">hashes each step</text>
+  <rect x="330" y="30" width="170" height="80" rx="10" fill="var(--accent-soft, #dbe8f9)" stroke="var(--accent, #2a78d6)"/>
+  <text x="415" y="66" text-anchor="middle" font-size="15" font-weight="600" fill="var(--ink, #0e1420)">Shared cache</text>
+  <text x="415" y="87" text-anchor="middle" font-size="12" fill="var(--ink-2, #4b5563)">outputs, stored by hash</text>
+  <rect x="330" y="190" width="170" height="80" rx="10" fill="var(--surface, #ffffff)" stroke="var(--hair, #e3e6eb)"/>
+  <text x="415" y="226" text-anchor="middle" font-size="15" font-weight="600" fill="var(--ink, #0e1420)">Compiler</text>
+  <text x="415" y="247" text-anchor="middle" font-size="12" fill="var(--ink-2, #4b5563)">runs only on a miss</text>
+  <g font-size="12" fill="var(--ink-2, #4b5563)" text-anchor="middle">
+    <text x="250" y="49">1 · look up</text>
+    <text x="250" y="106">2 · hit: download</text>
+    <text x="250" y="221">3 · miss: build</text>
+    <text x="452" y="158">4 · store</text>
+  </g>
+</svg>
